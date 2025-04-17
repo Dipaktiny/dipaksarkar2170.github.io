@@ -1,75 +1,82 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dipak Sarkar | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; line-height: 1.6; background: #f4f4f4; color: #333; padding: 2rem; }
-    header { text-align: center; margin-bottom: 2rem; }
-    h1 { font-size: 2.5rem; color: #0077cc; }
-    h2 { margin-top: 2rem; color: #333; border-bottom: 2px solid #0077cc; padding-bottom: 5px; }
-    p, li { margin: 0.5rem 0; }
-    ul { padding-left: 1.2rem; }
-    .section { margin-bottom: 2rem; }
-    .contact a { color: #0077cc; text-decoration: none; }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-  <header>
-    <h1>Dipak Sarkar</h1>
-    <p>Frontend Developer | Designer | CSE Undergrad</p>
-    <div class="contact">
-      <p>Email: <a href="mailto:dipaksarkar2170@gmail.com">dipaksarkar2170@gmail.com</a></p>
-      <p>Phone: +91 93955 90438</p>
-      <p>GitHub: <a href="https://github.com/dipaksarkar2170">dipaksarkar2170</a></p>
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center p-6 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+    <h1 class="text-5xl font-bold mb-4">Dipak Sarkar</h1>
+    <p class="text-xl mb-6">Frontend Developer | Designer | CSE Undergrad</p>
+    <div class="space-x-4">
+      <a href="mailto:dipaksarkar2170@gmail.com" class="underline">Email</a>
+      <a href="https://github.com/dipaksarkar2170" target="_blank" class="underline">GitHub</a>
     </div>
-  </header>
-
-  <section class="section">
-    <h2>About Me</h2>
-    <p>I’m a passionate CSE student at Assam University, Silchar, with a love for frontend development, design, and problem-solving. I enjoy working on real-world tech projects and am actively seeking internship opportunities.</p>
   </section>
 
-  <section class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript, React.js, Tailwind CSS</li>
-      <li>Python, C, C++</li>
-      <li>UI/UX Design (Figma, Canva)</li>
-      <li>Git, VS Code, Firebase, NodeMCU</li>
-    </ul>
+  <!-- About Section -->
+  <section class="max-w-4xl mx-auto py-16 px-6" id="about" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+    <p>I’m a passionate Computer Science student from Assam University, Silchar. I love working with modern frontend tools, building cool projects, and solving real-world problems. Always curious, always building!</p>
   </section>
 
-  <section class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Smart Irrigation System</strong>: Web-based automation with ESP8266 and sensors (DHT11, soil moisture, pH, rain).</li>
-      <li><strong>Stepper Motor Control</strong>: Real-time stepper motor control with ESP8266 via web interface.</li>
-      <li><strong>This Portfolio</strong>: Responsive portfolio built with HTML/CSS.</li>
-    </ul>
+  <!-- Skills Section -->
+  <section class="bg-white py-16 px-6" id="skills" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-6">Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <div class="bg-gray-100 p-4 rounded shadow">HTML/CSS</div>
+        <div class="bg-gray-100 p-4 rounded shadow">JavaScript</div>
+        <div class="bg-gray-100 p-4 rounded shadow">React.js</div>
+        <div class="bg-gray-100 p-4 rounded shadow">Python</div>
+        <div class="bg-gray-100 p-4 rounded shadow">C / C++</div>
+        <div class="bg-gray-100 p-4 rounded shadow">UI/UX Design</div>
+      </div>
+    </div>
   </section>
 
-  <section class="section">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>B.Tech CSE</strong> – Assam University, Silchar (2021–2025)</li>
-      <li><strong>12th (85%)</strong> – JNV Chirang</li>
-      <li><strong>10th (83%)</strong> – JNV Chirang</li>
-    </ul>
+  <!-- Projects Section -->
+  <section class="py-16 px-6" id="projects" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="bg-white shadow-md rounded p-4 hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">Smart Irrigation System</h3>
+          <p>Web-based automation using ESP8266, soil, rain, and pH sensors.</p>
+        </div>
+        <div class="bg-white shadow-md rounded p-4 hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">Stepper Motor Controller</h3>
+          <p>Real-time motor control with ESP8266 through a web interface.</p>
+        </div>
+        <div class="bg-white shadow-md rounded p-4 hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">This Portfolio</h3>
+          <p>Responsive portfolio site using Tailwind CSS and JavaScript animations.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="section">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Python Bootcamp – Udemy</li>
-      <li>Web Dev Basics – freeCodeCamp</li>
-      <li>Graphic Design – Coursera</li>
-    </ul>
+  <!-- Contact Section -->
+  <section class="bg-indigo-600 text-white py-16 px-6" id="contact" data-aos="fade-up">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+      <p class="mb-4">Let's collaborate or just say hi 👋</p>
+      <p>Email: <a href="mailto:dipaksarkar2170@gmail.com" class="underline">dipaksarkar2170@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/dipaksarkar2170" target="_blank" class="underline">@dipaksarkar2170</a></p>
+    </div>
   </section>
 
+  <footer class="text-center py-4 text-sm text-gray-500 bg-white">© 2025 Dipak Sarkar. All rights reserved.</footer>
+
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
 </body>
 </html>
